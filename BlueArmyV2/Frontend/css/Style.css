@@ -1,0 +1,290 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+video {
+	position: fixed;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: transparent;
+	position: absolute;
+}
+
+.header .logo {
+	cursor: pointer;
+}
+
+.inner_header {
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	background-color: transparent;
+}
+
+.logo {
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.navegation {
+	float: right;
+	height: 100%;
+	cursor: pointer;
+}
+
+.navegation a {
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.navegation a li {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	padding: 0px 30px;
+	font-size: 18px;
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navegation a li:hover {
+	color: gray;
+}
+
+/* Gear Replacement Form */
+
+.form-popup p {
+	position: absolute;
+	top: 2.5%;
+	left: 93%;
+	float: right;
+	color: white;
+	font-family: 'Russo One', sans-serif;
+	cursor: pointer;
+}
+
+.form-popup p:hover{
+	color: #909090
+}
+
+.form-popup {
+	display: none;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	padding: 50px 40px;
+	box-shadow: 0 5px 5px gray;
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+	color: white;
+	background-color: rgba(10, 10, 10, 0.8);
+	border-radius: 15px;
+}
+
+.form-popup h2 {
+	margin: 0 0 60px;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-family: 'Russo One', sans-serif;
+}
+
+.form-popup .form-input {
+	position: relative;
+	margin: 20px 0;
+	color: white;
+}
+
+.form-popup .form-input input {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #606060;
+	padding: 10px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 25px;
+	transition: 0.25s;
+	font-family: 'Russo One', sans-serif;
+}
+
+.form-popup .form-input input[type="submit"] {
+	background: none;
+	color: white;
+	border: 2px solid #606060;
+	cursor: pointer;
+	font-family: 'Russo One', sans-serif;
+	margin-top: 30px;
+}
+
+.form-popup input:focus {
+	border-color: white;
+	width: 250px;
+}
+
+.form-popup .form-input input[type="submit"]:hover {
+	background: #606060;
+	border-color: white;
+	width: 250px;
+}
+
+.coming {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	padding: 50px 40px;
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+	color: white;
+}
+
+/* Cor de fundo do autocomplete */
+
+input:-webkit-autofill {
+	box-shadow: 0 0 0 30px #101010 inset;
+}
+
+/* Cor do texto do autocomplete */
+
+input:-webkit-autofill {
+	-webkit-text-fill-color: white !important;
+}
+
+/* Mute Button */
+
+.speakers {
+	position: absolute;
+	top: 90%;
+	left: 5%;
+	transform: translate(-50%, -50%);
+}
+
+input#un-mute {
+	display: none;
+}
+
+.unmute img {
+	display: none;
+}
+
+input#un-mute:checked~.unmute img {
+	display: initial;
+}
+
+input#un-mute:checked~.mute img {
+	display: none;
+}
+
+input#un-mute {
+	display: none;
+}
+
+.unmute img {
+	display: none;
+}
+
+input#un-mute:checked~.unmute img {
+	display: initial;
+}
+
+input#un-mute:checked~.mute img {
+	display: none;
+}
+
+/* Dashboard */
+.form-popupD p:hover{
+	color: #909090
+}
+
+.form-popupD p {
+	position: absolute;
+	top: 2.5%;
+	left: 93%;
+	float: right;
+	color: white;
+	font-family: 'Russo One', sans-serif;
+	cursor: pointer;
+}
+.form-popupD {
+	display: none;
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(10, 10, 10, 0.8);
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 5px 5px gray;
+}
+
+.form-popupD h2 {
+	margin: 0 0 40px;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-family: 'Russo One', sans-serif;
+}
+
+.form-popupD input {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #606060;
+	padding: 10px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 25px;
+	transition: 0.25s;
+	font-family: 'Russo One', sans-serif;
+}
+
+.form-popupD input:focus {
+	width: 250px;
+	border-color: white;
+}
+
+.form-popupD input[type="submit"] {
+	background: none;
+	color: white;
+	border: 2px solid #606060;
+	cursor: pointer;
+	font-family: 'Russo One', sans-serif;
+	margin-top: 30px;
+}
+
+.form-popupD input[type="submit"]:hover {
+	background: #606060;
+	border-color: white;
+	width: 250px;
+}
+
+.form-popupD input[type="submit"]:focus {
+	background: #606060;
+	border-color: white;
+	width: 250px;
+}

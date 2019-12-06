@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Blue Army</title>
+	<link rel="stylesheet" type="text/css" href="css\Style.css">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="icon" href="Resource/Blue-Army.png">
+	<meta charset="utf-8">
+	<script src="js\Seila.js"></script>
+
+<body>
+	<div class="intro">
+		<video id="BA" autoplay loop muted onloadstart="this.volume=0.3" >
+			<source src="Resource\Intro.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+	</div>
+
+	<div class="header">
+		<div class="inner_header">
+			<div class="logo">
+				<img src="Resource\Blue-Army.png" onclick="location.reload()"></a>
+			</div>
+
+			<ul class="navegation">
+				<a onclick="Form(), closeFormD() ,closeSoon()">
+					<li>Gear Replacement</li>
+				</a>
+				<a onclick="soon(), closeForm(), closeFormD()">
+					<li>Apply to BlueArmy</li>
+				</a>
+				<a onclick="FormD(), closeForm(), closeSoon()">
+					<li>Dashboard</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="speakers">
+		<input type="checkbox" id="un-mute" onclick="mute()">
+		<label for="un-mute" class="unmute">
+			<img src="Resource\speaker.png" alt="Mute_Icon.svg">
+		</label>
+		<label for="un-mute" class="mute">
+			<img src="Resource\mute.png" alt="Speaker_Icon.svg">
+		</label>
+	</div>
+
+
+	<div class="form-popup" id="myForm">
+		<form action="javascript:submitForm()" class="form-container" id="formgear" autocomplete="off">
+			<p onclick="closeForm()">X</p>
+			<h2 onclick="limpar()">Gear Replacement</h2>
+			<div class="form-input">
+				<input type="text" name="name" id="name" placeholder="Your Name" required>
+			</div>
+			<div class="form-input">
+				<input type="text" name="url" id="url" placeholder="Killboard URL" required>
+			</div>
+			<div class="form-input">
+				<input type="number" name="sets" id="sets" placeholder="Number of sets" required>
+			</div>
+			<div class="form-input">
+				<input type="submit" class="bntsubmit" value="Submit">
+			</div>
+			<h3 id="success"></h3>
+		</form>
+	</div>
+
+
+	<div class="form-popupD" id="myFormD">
+		<form name="login" class="box" autocomplete="off" method="POST">
+			<p onclick="closeFormD()">X</p>
+			<h2 class="title">Dashboard</h2>
+			<input type="text" name="username" placeholder="User Name" >
+			<input type="password" name="password" placeholder="Password" >
+			<input type="button" name="submit" value="Login" onclick="window.location.href = 'dashboard/examples/dashboard.html';">
+		</form>
+	</div>
+
+	<div class="coming" id="coming">
+		<h1>Coming soon...</h1>
+	</div>
+
+</body>
+
+</html>
